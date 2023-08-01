@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Fonts/Comfortaa-VariableFont_wght.ttf);
+  }
+@font-face {
+    font-family: 'Lilita';
+    src: url(Fonts/Righteous-Regular.ttf);
+}
+@font-face {
+    font-family: 'Bagel';
+    src: url(Fonts/Righteous-Regular.ttf);
+}
+h1{
+    font-family: 'Lilita';
+    text-align: center;
+    margin-top: 5rem;
+    color: #ec2b99;
+}
+p{
+    font-family: 'Montserrat';
+    text-align: center;
+    margin-top: 2rem;
+}
+#letsbirthdayimage{
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    width: 200px;
+}
+#flags{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 400px;
+    z-index: -1;
+}
+#background{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+#bottom p{
+    font-family: 'Montserrat';
+}
+#footer p{
+    text-align: center;
+    font-family: 'Montserrat';
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+}
+#footer{
+    background-color: #5950a4;
+    margin-top: 3rem;
+}
+@media screen and (max-width: 1310px){
+    #letsbirthdayimage{
+        display: none;
+    }
+    #flags{
+        display: none;
+    }
+}
+
+  
+
+.bar img{
+    width: 70%;
+    margin-left: 5%;
+}
+.bar{
+    z-index: 3;
+    position: fixed;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 10px 0px 5px rgba(0, 0, 0, 0.309);
+    background-color: white;
+    display: none;
+    top: 0;
+}
+@media screen and (max-width: 700px){
+    .bar{
+        display: flex;
+    }
+    h1{
+        margin-top: 8rem;
+    }
+    p{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 7%;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 15px;
+}
+.gallery img{
+    width: 100%;
+}
